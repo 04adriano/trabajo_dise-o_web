@@ -1,1 +1,1 @@
-# trabajo_dise-o_web
+# trabajo_diseno_web
