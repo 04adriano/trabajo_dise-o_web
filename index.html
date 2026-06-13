@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Vivencial de Lujo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Turismo Vivencial de Lujo y Moda Sostenible</h1>
+        <p>Experiencias exclusivas en los destinos más impresionantes del Perú</p>
+    </header>
+    <!-- GALERÍA SEMÁNTICA -->
+    <section class="galeria">
+        <h2>Destinos Destacados</h2>
+        <figure class="destination-card">
+            <picture>
+                <source media="(min-width:1024px)"
+                    srcset="https://images.unsplash.com/photo-1526392060635-9d6019884377">
+                <source media="(min-width:768px)"
+                    srcset="https://images.unsplash.com/photo-1526392060635-9d6019884377">
+                <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377"
+                    alt="Vista panorámica de Machu Picchu">
+            </picture>
+            <figcaption>
+                <h3>Machu Picchu</h3>
+                <p>Experiencia premium con guías especializados y acceso exclusivo.</p>
+            </figcaption>
+        </figure>
+        <figure class="destination-card">
+            <picture>
+                <source media="(min-width:1024px)"
+                    srcset="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+                <source media="(min-width:768px)"
+                    srcset="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+                <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21"
+                    alt="Playas de lujo en Máncora">
+            </picture>
+            <figcaption>
+                <h3>Máncora</h3>
+                <p>Resorts exclusivos frente al mar y actividades de relajación.</p>
+            </figcaption>
+        </figure>
+        <figure class="destination-card">
+            <picture>
+                <source media="(min-width:1024px)"
+                    srcset="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+                <source media="(min-width:768px)"
+                    srcset="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e"
+                    alt="Paisaje natural de la Amazonía peruana">
+            </picture>
+            <figcaption>
+                <h3>Amazonía</h3>
+                <p>Turismo ecológico de lujo con experiencias sostenibles.</p>
+            </figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>Paquetes VIP</h2>
+        <table>
+            <caption>Comparación de Paquetes Turísticos</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Paquete</th>
+                    <th scope="col">Destinos</th>
+                    <th scope="col">Alojamiento</th>
+                    <th scope="col">Eventos de Moda</th>
+                    <th scope="col">Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gold</td>
+                    <td>Machu Picchu</td>
+                    <td>4 Estrellas</td>
+                    <td>Sí</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>Platinum</td>
+                    <td>Machu Picchu + Máncora</td>
+                    <td>5 Estrellas</td>
+                    <td>Sí</td>
+                    <td>$2500</td>
+                </tr>
+                <tr>
+                    <td>Diamond</td>
+                    <td>Tour Completo</td>
+                    <td>5 Estrellas Premium</td>
+                    <td>VIP Exclusivo</td>
+                    <td>$4500</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Reserva tu Experiencia</h2>
+        <form>
+            <label for="nombre">Nombre Completo</label>
+            <input
+                type="text"
+                id="nombre"
+                minlength="5"
+                required
+                placeholder="Ingrese su nombre completo">
+            <label for="correo">Correo Institucional</label>
+            <input
+                type="email"
+                id="correo"
+                required
+                placeholder="ejemplo@universidad.edu.pe">
+            <label for="telefono">Teléfono</label>
+            <input
+                type="tel"
+                id="telefono"
+                pattern="[0-9]{9}"
+                required
+                placeholder="999999999">
+            <label for="fecha">Fecha de Viaje</label>
+            <input
+                type="date"
+                id="fecha"
+                min="2026-06-12"
+                required>
+            <label for="destino">Destino Preferido</label>
+            <select id="destino" required>
+                <option value="">Seleccione</option>
+                <option>Machu Picchu</option>
+                <option>Máncora</option>
+                <option>Amazonía</option>
+            </select>
+            <label for="presupuesto">
+                Presupuesto Máximo (USD)
+            </label>
+            <input
+                type="range"
+                id="presupuesto"
+                min="500"
+                max="5000"
+                value="2500">
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section>
+</body>
+</html>
